@@ -68,7 +68,7 @@ function paintTodo() {
 
     loginGroup.style.display = 'none';
     todoGroup.style.display = 'block';
-    username.innerHTML = `${storageName} `;
+    username.innerHTML = `${storageName}`;
 
     if(storageTodos !== null) {
         createHTMLTodoList();
