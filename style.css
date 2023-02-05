@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url(./images/bg-img-01.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weahter-area {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.clock-area {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.login-group, .todo-form-area {
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.login-input, .todo-input {
+    width: calc(100% - 81px);
+    padding: 10px;
+    border: none;
+}
+
+.login-button, .todo-button {
+    width: 57px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007cff;
+    cursor: pointer;
+}
+
+.todo-group {
+    display: none;
+    margin-top: 30px;
+}
+
+.user-area {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.todo-list {
+    padding-top: 15px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.todo-list-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.todo-list-item::before {
+    content: '-';
+    margin-right: 5px;
+}
+
+.todo-list-item .delete-btn {
+    margin-left: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #ff3737;
+    cursor: pointer;
+}
+
