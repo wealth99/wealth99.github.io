@@ -33,6 +33,7 @@ function getClock() {
 function handleLoginForm(event) {
     event.preventDefault();
     const input = event.target[0];
+    if(input.value == '') return;
 
     localStorage.setItem('name', input.value);
     input.value = '';
@@ -45,13 +46,14 @@ function handleTodoForm(event) {
 
     let newTodos = JSON.parse(localStorage.getItem(TODOS_KEY)) || [];
     const input = event.target[0];
+    if(input.value == '') return;
+
     const todo = {
         id : Date.now(),
         text: input.value
     }
 
     input.value = '';
-
     newTodos.push(todo);
     localStorage.setItem(TODOS_KEY, JSON.stringify(newTodos));
     todos = newTodos;
