@@ -39,7 +39,7 @@
 }
 
 .login-input, .todo-input {
-    width: calc(100% - 81px);
+    width: calc(100% - 82px);
     padding: 10px;
     border: none;
 }
